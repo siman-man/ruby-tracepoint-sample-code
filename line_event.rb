@@ -1,5 +1,5 @@
 TracePoint.trace(:line) do |tp|
-  puts "#{tp.binding.eval('__LINE__')}: exec"
+  puts "#{tp.lineno}: exec"
 end
 
 a = 1
